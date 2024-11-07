@@ -33,10 +33,12 @@
     "release-notes": "node ./scripts/release-notes.js"
   },
   "devDependencies": {
+    "@4az/prettier-plugin-html-erb": "^0.0.5",
     "@babel/types": "^7.24.7",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
     "@microsoft/api-extractor": "^7.47.0",
     "@prettier/plugin-pug": "^3.0",
+    "@prettier/plugin-ruby": "^4.0.4",
     "@shopify/prettier-plugin-liquid": "^1.4.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@zackad/prettier-plugin-twig-melody": "^0.5.0",
@@ -90,7 +92,9 @@
     "prettier-plugin-organize-imports": "*",
     "prettier-plugin-sort-imports": "*",
     "prettier-plugin-style-order": "*",
-    "prettier-plugin-svelte": "*"
+    "prettier-plugin-svelte": "*",
+    "@4az/prettier-plugin-html-erb": "*",
+    "@prettier/plugin-ruby": "*"
   },
   "peerDependenciesMeta": {
     "@ianvs/prettier-plugin-sort-imports": {
@@ -139,6 +143,12 @@
       "optional": true
     },
     "prettier-plugin-svelte": {
+      "optional": true
+    },
+    "4az/prettier-plugin-html-erb": {
+      "optional": true
+    },
+    "@prettier/plugin-ruby": {
       "optional": true
     }
   },

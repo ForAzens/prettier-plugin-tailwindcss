@@ -1140,6 +1140,13 @@ export const parsers: Record<string, Parser> = {
         }),
       }
     : {}),
+  ...(base.parsers["erb-template"]
+    ? {
+        "erb-template": createParser('erb-template', transformHtml, {
+          staticAttrs: ['class'],
+        }),
+      }
+    : {}),
   ...(base.parsers.astro
     ? {
         astro: createParser('astro', transformAstro, {
